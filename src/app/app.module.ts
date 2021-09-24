@@ -8,11 +8,13 @@ import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { CastlerService } from './castler.service';
 import {HttpClientModule} from '@angular/common/http';
+import { UsernotfoundComponent } from './usernotfound/usernotfound.component';
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
-    LoginComponent
+    LoginComponent,
+    UsernotfoundComponent
   ],
   imports: [
     BrowserModule,

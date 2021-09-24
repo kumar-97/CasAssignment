@@ -26,6 +26,6 @@ export class CastlerService {
         console.log('inservice',this.stringSubject)
         this.router.navigate(['profile'])
       
-      },err=>{this.router.navigate(['login'])})
+      },err=>{this.router.navigate(['usernotfound'])})
     }
 }

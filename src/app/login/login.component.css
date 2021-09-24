@@ -1,0 +1,14 @@
+.labelStyle{
+    margin-bottom: 12px;
+    font-size: 34px;
+}
+
+.textStyle{
+    width: 50%;
+    margin-bottom: 3px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

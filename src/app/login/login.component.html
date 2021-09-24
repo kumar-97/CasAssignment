@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <h1>Please login</h1>
+    <form  [formGroup]="verifyForm">
+        <div class="form-group">
+          <label class="labelStyle">Id</label>
+            <input type="number" class="form-control textStyle" formControlName="id"
+            [class.is-invalid]="!verifyForm.controls['id'].valid && verifyForm.controls['id']?.touched"
+            >
+            <small  *ngIf="!verifyForm.controls['id'].valid && verifyForm.controls['id']?.touched" class="text-danger"> Id is required</small>
+        </div>
+        <button class="btn btn-primary" (click)="onSubmit()" [disabled]="!verifyForm.valid" > Submit</button>
+        <!-- <button type="submit" [disabled]="!verifyForm.valid">Submit</button> -->  
+    </form >
+  
+  </div>
+
+  <!-- <app-profile [uData]='apiDtata'></app-profile> -->
